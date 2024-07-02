@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content = "Tercera entrega - Curso de JavaScrpit - CoderHouse">
+    <link rel="shortcut icon" href ="./recursos/funkcoder.ico">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>3ra Entrega - JavaScript - CoderHouse - Simon Avila</title>
+</head>
+<body>
+<button class="btn1" type="submit">Iniciar Sesión</button>
+    <br>
+    <br>
+<div id="registroVentas">
+    <h2>Registro ventas - SIN USUARIO ⚠️</h2>
+        <br>
+        <br>
+    <section id="sectionForm">
+        <form id="formRegistro">
+            <label for="nameTitle">Nombre Cliente</label>
+            <input type="text" id="nameInput" placeholder="Juanito Perez" required>
+
+            <label for="rutTitle">RUT Cliente</label>
+            <input type="text" id="rutInput" placeholder="XX.XXX.XXX-X" required>
+
+            <label for="dateTitle">Fecha venta</label>
+            <input type="date" id="dateInput" placeholder="DD/MM/AAAA" required>
+
+            <label for="codeTitle">Código Producto</label>
+            <input type="text" id="codeInput" placeholder="XXX000" required>
+
+            <label for="productTitle">Producto</label>
+            <input type="text" id="productInput" placeholder="Nombre del producto" required>
+
+            <label for="priceTitle">Monto ($CLP)</label>
+            <input type="number" id="priceInput" placeholder="Sólo números enteros" required>
+
+            <label for="dctoTitle">Descuento (%)</label>
+            <input type="number" id="dctoInput" placeholder="Sólo números enteros" required>
+
+            <button class="btn2" type="submit">Registrar Venta</button>
+        </form>
+    </section>
+    <section id ="sectionListado">
+        <h3>Listado de ventas:</h3>
+        <div id="listadoVentas">
+        </div>
+    </section> 
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
